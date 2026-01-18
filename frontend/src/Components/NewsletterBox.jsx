@@ -14,7 +14,8 @@ const NewsletterBox = () => {
         policy
       </p>
       <form
-        onsubmit={onsubmithandler}
+        onSubmit={onsubmithandler}
+        
         className="w-full sm:w-1/2 flex items-center gap-3 mx-auto my-6 border pl-3"
       >
         <input

@@ -3,13 +3,19 @@ import { ShopContext } from "../Context/ShopContext";
 import Title from "./Title";
 import ProductItem from "./ProductItem";
 
+
+
+
 const BestSeller = () => {
   const { products } = useContext(ShopContext);
   const [bestSeller, setBestSeller] = useState([]);
 
+  console.log(bestSeller,"Best seller")
+
   useEffect(() => {
-    const bestSeller = products.filter((item) => item.bestSeller);
-    setBestSeller(products.slice(0, 4));
+    
+    const bestProduct = products.filter((item) => item.bestSeller);
+    setBestSeller(bestProduct.slice(0,4));
   }, [products]);
 
   return (
@@ -38,3 +44,4 @@ const BestSeller = () => {
 };
 
 export default BestSeller;
+
