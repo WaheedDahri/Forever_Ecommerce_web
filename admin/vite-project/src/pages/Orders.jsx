@@ -183,7 +183,7 @@ const Orders = ({ token }) => {
 
     try {
       const response = await axios.post(
-        `${backendUrl}/api/order/list`,
+        `"https://forever-ecommerce-webbackend.vercel.app"/api/order/list`,
         {},
         {
           headers: {
@@ -210,7 +210,7 @@ const Orders = ({ token }) => {
   const statusHandler = async (event, orderId) => {
     try {
       const response = await axios.post(
-        `${backendUrl}/api/order/status`,
+        `"https://forever-ecommerce-webbackend.vercel.app"/api/order/status`,
         {
           orderId,
           status: event.target.value,

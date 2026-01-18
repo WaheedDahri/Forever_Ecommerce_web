@@ -9,7 +9,7 @@ const List = ({token}) => {
 
  const fetchList = async () =>{
    try {
-    const response = await axios.get(backendUrl+ '/api/product/list')
+    const response = await axios.get("https://forever-ecommerce-webbackend.vercel.app"+ '/api/product/list')
     if(response.data.success){
       setList(response.data.products);
     } else{
@@ -41,7 +41,7 @@ const removeProduct = async (id) => {
   try {
     // const response = await axios.post(backendUrl+ '/api/product/remove', {id}, {headers:{token}})
     const response = await axios.post(
-  backendUrl + '/api/product/remove', 
+  "https://forever-ecommerce-webbackend.vercel.app" + '/api/product/remove', 
   { id }, 
   { headers: { Authorization: `Bearer ${token}` } }
 )
