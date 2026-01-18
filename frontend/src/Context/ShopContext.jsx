@@ -8,7 +8,7 @@ export const ShopContext = createContext();
 const ShopContextProvider = ({ children }) => {
   const currency = "$";
   const delivery_fee = 10;
-  const backendUrl = import.meta.env.REACT_APP_API_URL;
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
   const navigate = useNavigate();
 
