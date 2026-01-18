@@ -70,7 +70,7 @@ const Add = ({ token }) => {
       //   }
       // )
       const response = await axios.post(
-  `"https://forever-ecommerce-webbackend.vercel.app"/api/product/add`,
+  `https://forever-ecommerce-webbackend.vercel.app/api/product/add`,
   formData,
   {
     headers: {
