@@ -46,7 +46,7 @@ const adminAuth = (req, res, next) => {
     }
 
     // Attach admin info to request
-    req.adminId = decoded.id;
+    // req.adminId = decoded.id;
     req.adminEmail = decoded.email;
 
     next();
