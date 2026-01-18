@@ -151,44 +151,6 @@ const registerUser = async (req, res) => {
     }
 }
 
-// Route for admin login (you can customize later)
-
-// const adminLogin = async (req, res) => {
-//     try {
-//         // Example: admin credentials check
-//         const { email, password } = req.body;
-//         if (email === process.env.ADMIN_EMAIL && password === process.env.ADMIN_PASSWORD) {
-//             const token = jwt.sign(email+password,process.env.JWT_SECRET)
-//             res.json({ success: true, token });
-//         } else {
-//             res.json({ success: false, message: "Invalid admin credentials" });
-//         }
-//     } catch (error) {
-//         console.log(error);
-//         res.json({ success: false, message: error.message });
-//     }
-// }
-
-// const adminLogin = async (req, res) => {
-//     try {
-//         const { email, password } = req.body;
-
-//         // Fallback default admin credentials for testing
-//         const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'dahrivicky@gmail.com';
-//         const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'waheed@09';
-//         const JWT_SECRET = process.env.JWT_SECRET || 'Waheed@JWT';
-
-//         if (email === ADMIN_EMAIL && password === ADMIN_PASSWORD) {
-//             const token = jwt.sign({ email }, JWT_SECRET, { expiresIn: '1h' });
-//             return res.json({ success: true, token });
-//         } else {
-//             return res.status(401).json({ success: false, message: "Invalid admin credentials" });
-//         }
-//     } catch (error) {
-//         console.error(error);
-//         res.status(500).json({ success: false, message: error.message });
-//     }
-// }
 
 
 
