@@ -196,7 +196,7 @@ const adminLogin = async (req, res) => {
   try {
     const { email, password } = req.body;
 
-    const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "dahrivicky@gmail.com";
+    const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "dahriwaheed43@gmail.com";
     const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "waheed@09";
     const JWT_SECRET = process.env.JWT_SECRET || "Waheed@JWT";
 
