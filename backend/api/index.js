@@ -30,7 +30,7 @@ app.use("/api/order", orderRouter);
 
 // Test route
 app.get("/", (req, res) => {
-  res.send("API is working 🚀");
+  res.send("API is working");
 });
 
 export default app;
