@@ -14,7 +14,7 @@ const Collection = () => {
   const [filterProducts, setFilterProducts] = useState([]);
   const [category, setCategory] = useState([]);
   const [subCategory, setsubCategory] = useState([]);
-  const [sortOption, setSortOption] = useState("relevant");
+  const [sortOption, setSortOption] = useState("filter");
   const [isOpen, setIsOpen] = useState(false);
 
   const selectOptions = [
